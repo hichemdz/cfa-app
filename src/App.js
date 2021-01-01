@@ -5,7 +5,7 @@ import Content from './components/content';
 import Footer from './components/footer';
 function App() {
   return (
-    <div className="App bg-gray-100">
+    <div className="App bg-gray-100 relative">
       <Header />
       <Content />
       <Footer />
