@@ -5,14 +5,16 @@ export default function index() {
      
     <footer className='grid grid-cols-12 bg-gray-900 text-gray-500 '>
          <div className="pt-10 col-start-2 col-span-10">
-            <div className='grid grid-cols-1 md:grid-cols-12  lg:grid-cols-12 gap-2 md:gap-5'>
-                <div className="md:col-span-8 g-red-300 sm:b-red-200">
+            <div className='grid grid-cols-1 md:grid-cols-12  lg:grid-cols-12 gap-2 md:gap-0'>
+                {/* about */}
+                <div className="md:col-span-8 lg:col-span-5 sm:b-red-200">
                     <h3 className='font-black mb-2 text-gray-200'>ABOUT O&B UNIVERSITY</h3>
                     <p className=' leading-8 footer_aboute '>
                     We are the trusted Java development consulting and training center in the Philippines. We developed these courses to address the need for well-trained Java developers who can not only build web applications, but have a good grasp of the requirements and environment for enterprise systems development. 
                     </p>
                 </div>
-                <div className="col-span-2 md:col-span-4 ">
+                {/* links */}
+                <div className="col-span-2 md:col-span-2 ">
                     <h3 className='font-black mb-2 text-gray-200'>ABOUT</h3>
                     <ul className='sucond_color flex md:flex-col'>
                         <li className='mb-2 mr-2'>Our Story</li>
@@ -20,9 +22,11 @@ export default function index() {
                         <li className='mb-2 mr-2'>Our People</li>
                     </ul>
                 </div>
+                   {/* siparator */}
                 <div className="col-span-2 hidden lg:block ">
                 </div>
-                <div className="md:col-span-12 lg:col-span-3 g-red-200">
+                  {/* contact */}
+                <div className="md:col-span-12  lg:col-span-3  ">
                     <h3 className='font-black mb-2 text-gray-200'>Contact Us</h3>
                     <p className='block text-md mb-2'>Philippines: 3rd Floor, CJV Building 108 </p>
                     <p className='block mb-2'>Aguirre Street, Legaspi Village, Makat</p>

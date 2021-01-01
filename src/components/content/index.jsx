@@ -111,11 +111,11 @@ const Testimonials = (props) => {
 
     return (
         <div className="content">
-            <section id='distance' className='mb-24 mt-24 grid grid-cols-12'>
+            <section id='distance' className='mb-20 mt-28 grid grid-cols-12'>
                 <div className="col-start-2 col-span-10">
-                    <h3 className='text-4xl font-bold mb-3 '>Professors specialized with extensive experience</h3>
+                    <h3 className='text-4xl font-bold mb-5 '>Professors specialized with extensive experience</h3>
                     <p className='leading-7 text-md '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, impedit repellat! Laboriosam fugiat ab excepturi consectetur consequuntur, corporis adipisci exercitationem, sint culpa facere in! Consequatur alias magni obcaecati pariatur nam?</p>
-                    <button className='rounded-full my-3 sucond_color shadow-3 text-sm font-bold  py-3 px-5'> View more Detialse</button>
+                    <button className='rounded-full mt-5 sucond_color shadow-3 text-sm font-bold  py-3 px-5'> View more Detialse</button>
                 </div>
             </section>
 
