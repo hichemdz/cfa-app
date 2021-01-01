@@ -1,3 +1,12 @@
+ul li{
+    cursor: pointer;
+    transition: color .3s linear;
+}
+
+ul li:hover,ul li:hover span{
+    color: #fa8262;
+}
+
 #distance p{
     max-width: 900px;
 }
@@ -18,6 +27,7 @@
     background: linear-gradient(38deg,#bcc0c1b8,#fafafa ) !important;
     transform:scale(1.05);
 }
+
 
 
 /* .content .title_posts:after{
@@ -67,3 +77,8 @@ background: #F25F37B0;
     from {opacity:.3;}
     to {opacity:1;}
   }
+
+.items-specoalty{
+    cursor: pointer;
+    transition: background .3s linear;
+}  

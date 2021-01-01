@@ -46,7 +46,7 @@ const cous = [
 
 ]
 const Specoalty =  (props) =>
-                     <div className=' relative shadow-lg bg-white order-1 border-gray-200 ' >
+                     <div className='items-specoalty relative shadow-lg hover:shadow-xl hover:bg-yellow-100 bg-white order-1 border-gray-200 ' >
                 
                           <div className='border-t-4 sucond_border_color'>
                               <img className='w-full h-full' src={props.img} alt=""/>
@@ -60,7 +60,7 @@ const Features =  (props) =>
                 <div className='relative  p-3 pb-6 leading-8 justify-around border-t-4 sucond_border_color shadow-lg bg-white border-1 flex' >
 
                     <div className='mt-1 mr-3 shadow-xl border-1 bg-gray-20 rounded-full bggray-200 w-12 h-10 flex justify-center items-center'>
-                        <svg className='fill-current w-6 h-6 text-gray-300' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <svg className=' fill-current w-6 h-6 text-gray-300' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <defs/>
                             <path fill="none" d="M0 0h24v24H0z"/>
                             <path fill-rule="evenodd" d="M16.67 13.13C18.04 14.06 19 15.32 19 17v3h4v-3c0-2.18-3.57-3.47-6.33-3.87z"/>
