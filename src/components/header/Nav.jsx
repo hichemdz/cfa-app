@@ -28,8 +28,8 @@ const Nav = () => {
                             <Link className='mb-3 md:mb-0' to='/blog'><span className='p-3' > Blog </span></Link>
                         </ul>
 
-                        <button className='menu rounded bg-gray-900  absolute top-5 right-5 md:hidden' onClick={toggle} >
-                            <svg className='fill-current text-gray-900 md:hidden w-6 h-6' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                        <button className='menu rounded   absolute top-5 right-5 md:hidden' onClick={toggle} >
+                            <svg className='fill-current text-gray-200 md:hidden w-6 h-6' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
 
                                 <Icon />
 
@@ -40,8 +40,8 @@ const Nav = () => {
                             <Link className='mr-1'><span className='rounded p-3 ' href="">SginIn</span></Link>
                             <Link className=''><span className='rounded p-3 ' href="">LogIn</span></Link>
                         </ul> */}
-                    <button className='menu rounded bg-gray-900  absolute top-5 right-5 ' onClick={toggle} >
-                        <svg className='fill-current text-gray-900 md:hidden w-6 h-6' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                    <button className='menu rounded   absolute top-5 right-5 ' onClick={toggle} >
+                        <svg className='fill-current text-gray-200 md:hidden w-6 h-6' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
 
                             <Icon />
 

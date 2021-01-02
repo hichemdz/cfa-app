@@ -1,8 +1,16 @@
-:root{
-  --primry:#8912ff;
-  --sucendy:#923ee6;
- }
- 
+:root {
+  --primry: #8912ff;
+  --sucendy: #923ee6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,6 +18,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 code {
