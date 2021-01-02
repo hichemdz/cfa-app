@@ -20,12 +20,12 @@ const Nav = () => {
 
                     <Link className='font-black text-4xl w-full' to='/'><span className='p-3' > CFA </span></Link>
                     <div className={'inner_nav bg-gray-800 z-50 w-full h-screen  fixed top-0 pt-10 left-0 md:pt-0 md:block md:w-auto md:h-auto md:static  md:bg-transparent ' + (active ? 'block' : 'hidden')}>
-                        <ul className='items-start flex  flex-col  items-center justify-  md:flex-row'>
+                        <ul className='items-start flex text-sm font-normal   flex-col  items-center justify-  md:flex-row'>
 
-                            <Link className='mr-3 mb-3 md:mb-0' to='/specialties'><span className='p-3' > Specialt </span></Link>
-                            <Link className='mr-3 mb-3 md:mb-0' to='/about'><span className='p-3' > About </span></Link>
-                            <Link className='mr-3 mb-3 md:mb-0' to='/contact'><span className='p-3' > Contact </span></Link>
-                            <Link className='mb-3 md:mb-0' to='/blog'><span className='p-3' > Blog </span></Link>
+                            <Link className='mr-3 mb-3 md:mb-0 text-white' to='/specialties'><span className='p-3' > Specialties </span></Link>
+                            <Link className='mr-3 mb-3 md:mb-0 text-white' to='/about'><span className='p-3' > About </span></Link>
+                            <Link className='mr-3 mb-3 md:mb-0 text-white' to='/contact'><span className='p-3' > Contact </span></Link>
+                            <Link className='mb-3 md:mb-0 text-white' to='/blog'><span className='p-3' > Blog </span></Link>
                         </ul>
 
                         <button className='menu rounded   absolute top-5 right-5 md:hidden' onClick={toggle} >

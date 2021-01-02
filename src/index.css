@@ -29,3 +29,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.sucond_color {
+  color: #F25F37 !important;
+}
+
+.sucond_border_color {
+  border-color: #F25F37 !important;
+}
+
+.sucond_bg_color {
+  background: #F25F37 !important;
+}
