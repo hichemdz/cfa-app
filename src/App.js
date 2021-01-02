@@ -1,15 +1,37 @@
 //import logo from './logo.svg';
 import './assets/css/main.css';
-import Header from './components/header';
-import Content from './components/content';
-import Footer from './components/footer';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Nav from './components/header/Nav';
+import Home from './pages/Home';
+
+import Specialty from './pages/Specialties';
 function App() {
   return (
-    <div className="App bg-gray-100 relative">
-      <Header />
-      <Content />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App relative">
+        <Nav />
+        <Switch>
+          <Route path='/' exact>
+            <Home />
+          </Route>
+          <Route path='/specialties' exact>
+            <Specialty />
+          </Route>
+          {/* <Route path='/about' exact>
+              <About />
+          </Route>
+          <Route path='/contact' exact>
+              <Contact />
+          </Route>
+          <Route path='/blog' exact>
+              <Blog />
+          </Route>
+          <Route path='/blog/:id_post' exact>
+              <Post />
+          </Route> */}
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
