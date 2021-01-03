@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 const Specialty = (props) => {
 
     return (
@@ -7,7 +7,7 @@ const Specialty = (props) => {
             <div className='border-t-4 sucond_border_color'>
                 <img className='w-full h-full' src={props.img} alt="" />
                 <h3 className='text-xl px-2 font-black my-3 text-center' > {props.title} </h3>
-                <button className='w-1/2 mx-auto block rounded-t-full mt-3 sucond_color shadow-3 text-sm font-bold  py-2 px-5'>View More </button>
+                <Link to='/specialties/10' className='more w-1/2 mx-auto block rounded-t-full mt-3 sucond_color shadow-3 text-sm font-bold  py-2 px-5'>View More </Link>
             </div>
         </div>
     )

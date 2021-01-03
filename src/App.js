@@ -5,7 +5,9 @@ import Nav from './components/header/Nav';
 import Footer from './components/footer';
 import Home from './pages/Home';
 import Specialty from './pages/Specialties';
+import Blog from './pages/Bloger';
 import ItemSpecialty from './pages/Specialties/components/desplaySpecialty';
+import SinglePost from './pages/Bloger/singlPost';
 function App() {
   return (
     <Router>
@@ -18,7 +20,9 @@ function App() {
           <Route path='/specialties' exact>
             <Specialty />
           </Route>
+          <Route path='/blog' exact component={Blog} />
 
+          <Route path='/blog/:id' exact component={SinglePost} />
           <Route path='/specialties/:id' exact component={ItemSpecialty} />
 
           {/* <Route path='/about' exact>

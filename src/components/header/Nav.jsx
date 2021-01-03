@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 const Nav = () => {
-    const [active, setInnerNav] = useState(false)
-    console.log(active);
-    const toggle = () => {
 
-        setInnerNav(!active)
-        //alert('ok')
-    }
+    const Navigation = ['specialties', 'about', 'contact', 'blog']
+    const [active, setInnerNav] = useState(false)
+    const [activeLink, setActiveNav] = useState('home')
+    const toggle = () => setInnerNav(!active)
+    const toggleNavItem = (nav) => setActiveNav(nav);
+    console.log(activeLink);
+
+
 
     const Icon = () => {
         if (!active) return <> <path d="M0 0h24v24H0z" fill="none" /><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /> </>
@@ -18,14 +20,21 @@ const Nav = () => {
             <nav className="relative border-b border-gray-800 col-span-12   grid grid-cols-12 py-3 ">
                 <div className="col-start-2 col-span-10 flex items-center text-gray-200   justify-between">
 
-                    <Link className='font-black text-4xl w-full' to='/'><span className='p-3' > CFA </span></Link>
-                    <div className={'inner_nav bg-gray-800 z-50 w-full h-screen  fixed top-0 pt-10 left-0 md:pt-0 md:block md:w-auto md:h-auto md:static  md:bg-transparent ' + (active ? 'block' : 'hidden')}>
-                        <ul className='items-start flex text-sm font-normal   flex-col  items-center justify-  md:flex-row'>
-
-                            <Link className='mr-3 mb-3 md:mb-0 text-white' to='/specialties'><span className='p-3' > Specialties </span></Link>
-                            <Link className='mr-3 mb-3 md:mb-0 text-white' to='/about'><span className='p-3' > About </span></Link>
-                            <Link className='mr-3 mb-3 md:mb-0 text-white' to='/contact'><span className='p-3' > Contact </span></Link>
-                            <Link className='mb-3 md:mb-0 text-white' to='/blog'><span className='p-3' > Blog </span></Link>
+                    <Link className='font-black text-4xl w-full' to='/'><span className='p-3' onClick={() => toggleNavItem('home')} > CFA </span></Link>
+                    <div className={'inner_nav flex items-center justify-center  bg-gray-800 z-50 w-full h-screen  fixed top-0 pt-10 left-0 md:pt-0  md:inline-block md:w-auto md:h-auto md:static  md:bg-transparent ' + (active ? 'block' : 'hidden')}>
+                        <ul className='flex  flex-col items-center text-2xl font-normal md:text-sm  md:flex-row'>
+                            {
+                                Navigation.map((v, k) => {
+                                    return (
+                                        <Link className={'mr-3 mb-3 md:mb-0 text-white  uppercase ' + (activeLink === v ? 'sucond_color font-bold' : '')} onClick={() => toggleNavItem(v)} to={'/' + v}>
+                                            <span className='' > {v} </span>
+                                        </Link>
+                                    )
+                                })
+                            }
+                            {/* <Link className='mr-3 mb-3 md:mb-0 text-white hover:text-yellow-500' to='/about'><span className='p-3' > About </span></Link>
+                            <Link className='mr-3 mb-3 md:mb-0 text-white hover:text-yellow-500' to='/contact'><span className='p-3' > Contact </span></Link>
+                            <Link className='mb-3 md:mb-0 text-white' to='/blog'><span className='p-3' > Blog </span></Link> */}
                         </ul>
 
                         <button className='menu rounded   absolute top-5 right-5 md:hidden' onClick={toggle} >

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './app.css'
 import c1 from '../../assets/img/c1.png';
 import Specialty from './components/Specialty';
+import Pafination from '../components/pagination';
 const Index = () => {
     const categories = ['All specialties', 'Residence', 'Apprenticeship']
     const [show, setShow] = useState(false)
@@ -60,6 +61,11 @@ const Index = () => {
                             )
                         }
                     </div>
+                    {/* paginition */}
+                    <div className=' flex justify-center col-span-4'>
+                        <Pafination data={[1, 2, 3, 5, 6, 7, 11]} />
+                    </div>
+                    {/* .pagination */}
                 </div>
 
             </div>

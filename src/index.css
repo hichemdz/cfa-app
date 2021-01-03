@@ -35,6 +35,10 @@ code {
   color: #F25F37 !important;
 }
 
+.sucond_color:hover {
+  color: #F94918 !important;
+}
+
 .sucond_border_color {
   border-color: #F25F37 !important;
 }

@@ -3,6 +3,7 @@ import c1 from '../../assets/img/c1.png';
 import Specialty from './components/Specialty';
 import Features from './components/Features'
 import Testimonials from './components/Testimonials'
+import { Link } from 'react-router-dom';
 import './app.css';
 const Content = () => {
     const [count, setCount] = useState(0);
@@ -77,11 +78,12 @@ const Content = () => {
 
                     </div>
                     {/* show more */}
-                    <button className='rounded-full more  mt-20 bg-transparent sucond_color shadow-3 text-sm font-bold  py-3 px-5'>
-                        <svg className='fill-current sucond_color' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                            <path d="M12 20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2s-2 .9-2 2v12c0 1.1.9 2 2 2zm-6 0c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2s-2 .9-2 2v4c0 1.1.9 2 2 2zm10-9v7c0 1.1.9 2 2 2s2-.9 2-2v-7c0-1.1-.9-2-2-2s-2 .9-2 2z" />
+                    <Link to='/specialties' className='inline-block rounded-full   mt-20 bg-transparent sucond_color shadow-3 text-sm font-bold    px-5'>
+                        <svg className='fill-current w-16 h-16 sucond_color' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
                         </svg>
-                    </button>
+                    </Link>
                 </div>
             </section>
 
@@ -99,9 +101,9 @@ const Content = () => {
                 </div>
             </section>
 
-            <section id='posts' className='mb-20 grid grid-cols-12'>
+            <section id='posts' className='mb- grid grid-cols-12'>
 
-                <div className=" col-start-2  gap-10 col-span-10">
+                <div className=" col-start-2  gap-10 col-span-10 text-center">
                     <div className='text-center' >
 
                         {
@@ -113,7 +115,7 @@ const Content = () => {
                                             If you want to create mission-critical systems, take your products to market quickly, and maintain a clean code base -then you need great developers.
                                             Adopt what we've learned from decades of providing software engineering solutions.
                                     </p>
-                                        <button className='rounded-full mt-5 sucond_color shadow-3 text-sm font-bold  py-3 px-5'> View more Detialse</button>
+                                        <Link to='' className='inline-block rounded-full mt-5 sucond_color shadow-3 text-sm font-bold  py-3 px-5'> View more Detialse</Link>
                                     </div>
 
                                     <div className='hidden lg:flex w-full   justify-center '>
@@ -125,15 +127,16 @@ const Content = () => {
 
                     </div>
                     {/* show more */}
-                    <button className='rounded-full  block mx-auto more  mt-24 bg-transparent sucond_color shadow-3 text-sm font-bold  py-3 px-5'>
-                        <svg className='fill-current sucond_color' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                            <path d="M12 20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2s-2 .9-2 2v12c0 1.1.9 2 2 2zm-6 0c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2s-2 .9-2 2v4c0 1.1.9 2 2 2zm10-9v7c0 1.1.9 2 2 2s2-.9 2-2v-7c0-1.1-.9-2-2-2s-2 .9-2 2z" />
+                    <Link to='/blog' className='inline-block rounded-full mx-auto  mt-0 bg-transparent sucond_color shadow-3 text-sm font-bold    px-5'>
+                        <svg className='fill-current w-16 h-16 sucond_color' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
                         </svg>
-                    </button>
+                    </Link>
                 </div>
             </section>
 
-            <section id="testimonials" className='mb-20 grid  grid-cols-12'>
+            <section id="testimonials" className='mb- bg-gray- grid  grid-cols-12'>
                 <div className="col-start-2 grid grid-rows-1 gap-10 col-span-10 ">
 
                     <div className="inner_testimonials ">
