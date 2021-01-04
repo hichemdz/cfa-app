@@ -35,7 +35,7 @@ main .inner_hero {
 main .inner_hero h1 {
     font-family: Roboto;
     font-weight: 700;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0px;
 }
 

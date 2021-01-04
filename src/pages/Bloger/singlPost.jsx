@@ -6,7 +6,7 @@ const SinglPost = () => {
 
                 <div className='text-center'>
 
-                    <h1 className='text-4xl mb-5'>2021 Workplace Learning Report: The Skills Defining the Future of Work </h1>
+                    <h1 className='text-4xl mb-5 px-10'>2021 Workplace Learning Report: The Skills Defining the Future of Work </h1>
                     <h2 className='text-lg mb-5' >November 11, 2020 By Udemy Team</h2>
                 </div>
                 <div className='conetnt'>
