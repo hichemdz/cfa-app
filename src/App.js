@@ -6,6 +6,8 @@ import Footer from './components/footer';
 import Home from './pages/Home';
 import Specialty from './pages/Specialties';
 import Blog from './pages/Bloger';
+import About from './pages/About';
+import Contact from './pages/Contact';
 import ItemSpecialty from './pages/Specialties/components/desplaySpecialty';
 import SinglePost from './pages/Bloger/singlPost';
 import DataProvider from './dataContext';
@@ -26,17 +28,14 @@ function App() {
             <Route path='/specialties' exact>
               <Specialty />
             </Route>
+            <Route path='/contact' exact><Contact /></Route>
             <Route path='/blog' exact component={Blog} />
-
+            <Route path='/about' exact><About /></Route>
             <Route path='/blog/:id' exact component={SinglePost} />
             <Route path='/specialties/:id' exact component={ItemSpecialty} />
 
-            {/* <Route path='/about' exact>
-              <About />
-              </Route>
-              <Route path='/contact' exact>
-              <Contact />
-              </Route>
+            {/* 
+              <Route path='/contact' exact><Contact /></Route>
               <Route path='/blog' exact>
               <Blog />
               </Route>

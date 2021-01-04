@@ -1,11 +1,25 @@
 import React from 'react'
-
- const  index = () => {
+import Conatiner from '../components/Container';
+function Contact() {
     return (
-        <div>
-            <h1>Specialties</h1>
-        </div>
+        <Conatiner cols={3}>
+
+            <section>
+                <h1>
+                    map
+               </h1>
+            </section>
+
+            <section>
+                <h1>
+                    map
+               </h1>
+            </section>
+
+
+        </Conatiner>
+
     )
 }
 
-export default index
+export default Contact

@@ -56,12 +56,14 @@ const Content = () => {
 
     ]
 
+    const Title = ({ title }) => <h3 className='text-3xl sm:text-3xl md:text-4xl font-bold mb-5 '>{title}</h3>
 
     return (
         <div className="content">
             <section id='distance' className='mb-20 mt-28 grid grid-cols-12'>
                 <div className="col-start-2 col-span-10">
-                    <h3 className='text-4xl font-bold mb-5 '>Professors specialized with extensive experience</h3>
+
+                    <Title title='Professors specialized with extensive experience' />
                     <p className='leading-7 text-md '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, impedit repellat! Laboriosam fugiat ab excepturi consectetur consequuntur, corporis adipisci exercitationem, sint culpa facere in! Consequatur alias magni obcaecati pariatur nam?</p>
                     <button className='rounded-full mt-5 more sucond_color shadow-3 text-sm font-bold  py-3 px-5'> View more Detialse</button>
                 </div>
@@ -69,7 +71,8 @@ const Content = () => {
 
             <section id='spcialty' className='mb-20 grid grid-cols-12 '>
                 <div className="col-start-2 col-span-10 text-center">
-                    <h3 className='text-4xl font-bold mb-8 text-left '>Specializations of our institute</h3>
+
+                    <Title title='Specializations of our institute' />
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-x-10 gap-y-12">
                         {
                             cous.map((v, k) => <Specialty img={v.img} title={v.title} key={k} />)
@@ -89,7 +92,8 @@ const Content = () => {
 
             <section id='features' className='mb-32 mt grid grid-cols-12'>
                 <div className="col-start-2  col-span-10">
-                    <h3 className='text-4xl font-bold mb-8 '>Specializations of our institute</h3>
+
+                    <Title title='Specializations of our institute' />
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10">
                         {
                             [1, 2, 3].map((v, k) => <Features key={k} />)
